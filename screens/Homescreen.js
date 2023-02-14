@@ -1,72 +1,63 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, ImageBackground, } from 'react-native';
+
+import { Text, View, ImageBackground, Image, SafeAreaView } from 'react-native';
+
 import React, { useEffect, useState } from 'react';
 
-import Login from './Loginscreen';
-
-import { Homescreendimg } from '../Constant/Constant';
+import { styles } from '../Component/Stylesheet';
 
 
+import { Homescreendimg, Iconimg } from '../Constant/Constant';
 
-export default function Homepage({ navigation }) {
+import { Icon } from '../Constant/Constant';
+
+
+
+export default function Homescreen({ navigation }) {
 
     const [seconds, setSeconds] = useState(0);
 
 
     useEffect(() => {
 
-        setInterval(() => {
-
-            setSeconds(seconds + 1);
-
+        setTimeout(() => {
+            setSeconds(seconds + 1)
             if (seconds === 5) {
-
-                navigation.navigate("Login");
-
-
-
+                navigation.navigate("Login")
             }
+
         }, 1000);
-    })
+    });
+
 
     return (
-        <View style={styles.container}>
+        <SafeAreaView style={styles.container}>
 
 
 
 
 
 
-            <Text style={styles.text}> HOMEMAID </Text>
+
+            {/* <Image style={styles.iconimg} resizeMode="stretch" source={Iconimg} /> */}
 
 
-            <ImageBackground style={styles.image} resizeMode="cover" source={Homescreendimg}>
+
+
+
+            <ImageBackground style={styles.image} resizeMode="contain" source={Homescreendimg}>
+
+            {/* <Image style={styles.iconimg} resizeMode="contain" source={Iconimg} /> */}
+
+                <Text style={styles.text}> HOMEMAID </Text>
 
             </ImageBackground>
 
-        </View>
+
+        </SafeAreaView>
+
+
     )
 
 }
-export const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        flexDirection: "column",
-        margin: 10,
-        backgroundColor: '#FAF9F6',
-    },
-    image: {
-        flex: 1,
 
-    },
-    text: {
-        color: 'green',
-        fontSize: 32,
-        // lineHeight: 84,
-        fontWeight: 'bold',
-        textAlign: 'center',
-       
-    
-    },
-});
 
