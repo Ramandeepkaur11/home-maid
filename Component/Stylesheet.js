@@ -27,14 +27,16 @@ export const styles = StyleSheet.create({
   input: {
     height: 40,
 
-    margin: 18,
+    margin: 10,
     borderWidth: 1,
     padding: 6,
     backgroundColor: "none",
     borderRadius: 32,
     borderColor: "black",
-    width:180,
-    marginLeft:80,
+    
+    alignItems:"center",
+    alignSelf:"center",
+    width:200,
 
   },
 
@@ -77,8 +79,9 @@ marginRight:60
     margin: 36,
   },
   iconimg: {
-    height: 28,
-    width: 50,
+    height: 20,
+    width: 70,
+    alignSelf:"center"
 
 
 
@@ -105,7 +108,7 @@ marginRight:60
     fontSize:20,
     textAlign:"center",
     margin:50,
-    color:"green"
+    color:"green",
   }
 
 });
