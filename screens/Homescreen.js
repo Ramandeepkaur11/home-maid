@@ -19,36 +19,40 @@ export default function Homescreen({ navigation }) {
 
     useEffect(() => {
 
-        // setTimeout(() => {
-        //     setSeconds(seconds + 1)
-        //     if (seconds === 5) {
-        //         navigation.navigate("Login")
-        //     }
+        setTimeout(() => {
+            setSeconds(seconds + 1)
+            if (seconds === 5) {
+                navigation.navigate("Login")
+            }
 
-        // }, 1000);
+        }, 1000);
     });
 
 
     return (
-        <SafeAreaView style={{ ...styles.container, flexDirection: 'column', justifyContent: 'space-around' }}>
+        <SafeAreaView style={{ ...styles.container, flexDirection: 'column', justifyContent:"flex-start",alignContent:"space-around",flexWrap:"nowrap",flex:1 }}>
 
 
 
-            <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'center' ,alignItems:"center" ,backgroundColor:"yellow"}}>
+            <View style={{ flex:2, justifyContent:"flex-end" ,alignItems:"center",flexDirection:"column",marginTop:18}}>
 
-                <Image style={{...styles.iconimg,flex:1}} resizeMode="contain" source={Iconimg} />
-
+                <Image style={{...styles.iconimg}} resizeMode="contain" source={Iconimg} />
+                <Text style={{ ...styles.text,marginTop:0}}> HOMEMAID </Text>
                 
             </View>
-            <View style={{flex:1,backgroundColor:"red",alignItems:"center",justifyContent:"flexstart"}}>
-            <Text style={{ ...styles.text,fontSize:32,color:"#14812B",marginVertical:0 }}> HOMEMAID </Text>
-            </View>
+
+            {/* <View style={{  alignItems:"center",justifyContent:"flex-start", flex:1, flexDirection:"column"}}>
 
             
 
-            <View style={{ flex: 4, paddingTop: 100, display: 'flex', flexDirection: 'column'}}>
-                {/* <Image style={{ ...styles.image, width: '80%', height: 100, alignSelf: 'center',marginBottom:-150 }} resizeMethod="scale" resizeMode="contain" source={Homescreendimg} /> */}
-                <ImageBackground style={{ ...styles.image,backgroundColor:"green" }} resizeMode="cover" source={Homescreendimg}>
+            </View> */}
+
+            
+
+            <View style={{ flex:6, flexDirection:"column", backgroundColor:"white",alignContent:"flex-end",justifyContent:"space-around",marginTop:120}}>
+
+
+                <ImageBackground style={{ ...styles.image,}} resizeMode="cover" source={Homescreendimg}>
 
 
 

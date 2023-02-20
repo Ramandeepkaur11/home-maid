@@ -16,24 +16,46 @@ export const styles = StyleSheet.create({
 
   },
   text: {
-    color: 'green',
-    fontSize: 32,
+    color: '#9ACD32',
+    fontSize: 30,
     // lineHeight: 84,
     fontWeight: 'bold',
-    textAlign: 'center',
+
     margin: 10,
+    alignSelf:"center",
 
   },
-  input: {
+  inputone: {
+    height: 46,
+
+
+  
+    // padding: 6,
+    
+    borderRadius: 32,
+  
+    alignContent:"center",
+    alignItems:"center",
+    alignSelf:"center",
+    width:200,
+    shadowOpacity:0.8,
+    shadowRadius:4,
+  shadowColor:"grey",
+  justifyContent:"center",
+
+ 
+
+  },
+  inputtwo: {
     height: 40,
 
-    margin: 10,
+    // margin: 10,
     borderWidth: 1,
     padding: 6,
     backgroundColor: "none",
     borderRadius: 32,
     borderColor: "black",
-    
+    marginTop:5,
     alignItems:"center",
     alignSelf:"center",
     width:200,
@@ -53,21 +75,26 @@ export const styles = StyleSheet.create({
   },
   buttoncontainer: {
 
-    flexDirection: 'row',
-
+    flexDirection: "column",
+justifyContent:"center",
+alignItems:"center",
+alignContent:"center"
 
 
 
   },
 
   inputtext: {
-    alignItems: "center",
+    // alignItems: "center",
 
     fontSize: 18,
-    justifyContent: "center",
-    textAlign: "center",
+    
+    // justifyContent: "center",
+    // textAlign: "center",
     // marginLeft: 70,
-marginRight:60
+
+color:"white",
+
 
 
 
@@ -79,7 +106,7 @@ marginRight:60
     margin: 36,
   },
   iconimg: {
-    height: 20,
+    height: 50,
     width: 70,
     alignSelf:"center"
 
@@ -90,25 +117,40 @@ marginRight:60
   paragraph: {
 
     fontSize: 14,
-    textAlign: "center",
-    margin: 16
+    // textAlign: "center",
+
+    color:"#9ACD32",
+    fontWeight:"bold",
+    // alignSelf:"center"
   },
 
   paragraph2: {
     margin: 6,
-    fontSize: 14,
+    fontSize: 16,
     textAlign: "center",
+    fontWeight:"bold"
   },
   inputbox: {
     borderColor: "none",
     borderWidth: 0,
     textAlign:"center",
+    
   },
   inputtxt:{
     fontSize:20,
     textAlign:"center",
-    margin:50,
-    color:"green",
-  }
+
+    color:"#9acd32",
+    fontWeight:"bold"
+  },
+  paragraphthree: {
+
+    fontSize: 14,
+    // textAlign: "center",
+
+    color:"#9ACD32",
+    fontWeight:"bold",
+    // alignSelf:"center"
+  },
 
 });

@@ -4,16 +4,29 @@ import { Facebookicon } from "../Constant/Constant";
 export const CustomButton = (props) => {
 
   
-        return (<TouchableOpacity style={{...styles.input,backgroundColor:props.buttoncolor  || "none"}} onPress={props.handler}>
-            <View style={styles.buttoncontainer}>
-                <Image style={styles.iconimg} resizeMode="contain" source={props.Image}></Image>
+        return (<TouchableOpacity style={{...styles.inputone,backgroundColor:props.buttoncolor}} onPress={props.handler}>
 
-                <Text style={styles.inputtext}>{props.title} </Text>
 
-            </View>
+                <Image style={{height:30,width:40,borderRadius:2,marginTop:18,alignSelf:"flex-start",marginLeft:18}} resizeMode="contain" source={props.Image }></Image>
+                <Text style={{alignSelf:"center"}} >{props.title} </Text>
+                
+        
+            
 
         </TouchableOpacity>)
     
+}
+
+
+
+export const CustomsimpleButton=(props)=>{
+    return(
+        (
+            <TouchableOpacity style={{...styles.inputone,backgroundColor:props.buttoncolor}} onPress={props.Handler}>
+                <Text style={{alignSelf:"center",color:"white",fontSize:16,fontWeight:"bold",shadowOpacity:0.2}}>{props.name}</Text>
+            </TouchableOpacity>
+        )
+    )
 }
 export const Textinputbox = (props) => (<TextInput style={styles.loginbox} placeholder={props.name}></TextInput>);
 

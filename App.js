@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Loginscreen from './screens/Loginscreen';
 import Loginsecondscreen from './screens/Loginsecondscreen';
 import Signupscreen from './screens/Signupscreen';
+import Facebooklogin from './screens/Facebooklogin';
 
 
 const Stack = createNativeStackNavigator();
@@ -22,6 +23,8 @@ export default function App() {
         <Stack.Screen name="Loginsecond" component={Loginsecondscreen} options={{headerShown:false}}/>
 
         <Stack.Screen name="Signup" component={Signupscreen} options={{headerShown:false}}/>
+
+        <Stack.Screen name="Facebooklogin" component={Facebooklogin} options={{headerShown:false}}/>
 
       </Stack.Navigator>
     </NavigationContainer>
