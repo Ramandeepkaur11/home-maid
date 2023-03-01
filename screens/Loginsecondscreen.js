@@ -19,7 +19,7 @@ export default function Loginsecondscreen({ navigation }) {
             </View>
 
             <View style={{justifyContent:"flex-end",alignItems:"flex-end",marginTop:-24}}>
-                <Text style={styles.paragraph}> Forget Password? </Text>
+                <Text style={styles.paragraph}> Forget password? </Text>
             </View>
 
             <View style={{ marginTop: 40 ,justifyContent:"center"}}>

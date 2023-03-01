@@ -30,7 +30,7 @@ export default function Loginscreen({ navigation }) {
 
                 {/* <CustomButton  buttoncolor="#ff7f50" title="Book Cleaner" style={{...styles.inputone}} ></CustomButton> */}
 
-                <CustomsimpleButton buttoncolor="#ff7f50" name="Book Cleaner"/>
+                <CustomsimpleButton buttoncolor="#ff7f50" name="Book cleaner"/>
 
 
             </View>
@@ -38,9 +38,7 @@ export default function Loginscreen({ navigation }) {
             <View style={{ flex: 1, marginTop: 20, flexDirection: "column" }}>
                 <CustomsimpleButton  name="Login" buttoncolor="#9ACD32" Handler={()=>navigation.navigate("Loginsecond")}/>
 
-                {/* <CustomButton style={styles.inputone} buttoncolor="#9ACD32" title="Login" handler={() => navigation.navigate("Loginsecond")} >
 
-                </CustomButton> */}
 
             </View>
             <View style={{ flex: 3, flexDirection: "column" }}>
